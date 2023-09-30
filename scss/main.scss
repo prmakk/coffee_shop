@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$hoverColor: #C7A17A;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #020204;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+
+    hr{
+        border-color: #32323D;
+    }
+
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-lng{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 6px;
+            margin-bottom: 8px;
+
+            p{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+                transition: .4s all ease;
+
+                &:hover{
+                    color: $hoverColor;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        &-phone{
+
+            a{
+                color: #fff;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: .4s all ease;
+
+                &:hover{
+                    color: $hoverColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__bot{
+        margin-top: 36px;
+        margin-bottom: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .hamburger{
+            display: none;
+            cursor: pointer;
+        }
+        
+        .bar{
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        @media (max-width: 768px) {
+            .header__bot-logo{
+                display: none;
+            }
+
+            .hamburger{
+                display: block;
+            }
+        
+            .hamburger.active .bar:nth-child(2){
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1){
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3){
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        
+            .nav__menu{
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                width: 100%;
+                text-align: center;
+                transition: .3s;
+        
+                &-item{
+                    margin: 16px 0px;
+                }
+        
+                &.active{
+                    left: 0;
+                }
+            }
+            
+        }
+
+        .nav__menu{
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            list-style-type: none;
+
+            &-item a{
+                color: #fff;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+                transition: .4s all ease;
+                text-decoration: none;
+
+                &:hover{
+                    color: $hoverColor;
+                }
+            }
+        }
+
+        &-logo{
+            position: absolute;
+            left: 50%;
+        }
+
+        &-icons{
+            display: flex;
+            gap: 30px;
+
+            svg:nth-child(1):hover, svg:nth-child(2):hover, svg:nth-child(3):hover{
+                cursor: pointer;
+            }
+
+            .is_liked{
+                display: none;
+            }
+        }
+    }
+}
+
+.hero{
+    background: url(../images/hero.jpg) top center;
+
+    &__title{
+        max-width: 571px;
+        margin-top: 199px;
+
+        h1{
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 144%; /* 86.4px */
+            text-transform: uppercase;
+        }
+    }
+
+    &__subtitle{
+        max-width: 535px;
+        margin-top: 35px;
+
+        p{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &__btns{
+        margin-top: 35px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-bottom: 198px;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: .4s all ease;
+        }
+
+        :nth-child(1){
+            padding: 17px 60px 11px 60px;
+            background-color: $hoverColor;
+            border-radius: 10px;
+
+            &:hover{
+                color: $hoverColor;
+                background-color: #fff;
+            }
+        }
+
+        :nth-child(2){
+            padding: 16px 51px;
+            background-color: transparent;
+            border: 1px solid #666681;
+            border-radius: 10px;
+
+            &:hover{
+                background-color: rgba($color: #000000, $alpha: 0.3);
+                border: 1px solid $hoverColor;
+            }
+        }
+    }
+}
+
+
+
+
+//RESPONSIVE DESIGN
+
+@media (max-width: 1200px) {
+    .container{
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 470px){
+    .hero__title{
+        margin-top: 110px;
+
+        h1{
+            font-size: 50px;
+        }
+    }
+    
+    .hero__btns{
+        flex-direction: column;
+    }
+}
