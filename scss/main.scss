@@ -168,6 +168,7 @@ body{
 
             svg:nth-child(1):hover, svg:nth-child(2):hover, svg:nth-child(3):hover{
                 cursor: pointer;
+                filter: blur(1px);
             }
 
             .is_liked{
@@ -181,7 +182,7 @@ body{
     background: url(../images/hero.jpg) top center;
 
     &__title{
-        max-width: 571px;
+        max-width: 590px;
         margin-top: 199px;
 
         h1{
@@ -225,7 +226,7 @@ body{
         }
 
         :nth-child(1){
-            padding: 17px 60px 11px 60px;
+            padding: 16px 60px;
             background-color: $hoverColor;
             border-radius: 10px;
 
@@ -269,12 +270,13 @@ body{
         background-color: #14141D;
         border-radius: 0px 10px 10px 0px;
         padding-left: 29px;
-        margin-top: -5px;
+        margin-top: -6px;
+        height: 325px;
 
         h2{
             margin-top: 30px;
             margin-bottom: 15px;
-            max-width: 223px;
+            max-width: 227px;
             font-size: 24px;
             font-style: normal;
             font-weight: 900;
@@ -356,6 +358,10 @@ body{
                     font-weight: 400;
                     line-height: normal;
                     text-transform: uppercase;
+                }
+
+                svg:hover{
+                    cursor: pointer;
                 }
             }
 
@@ -494,6 +500,10 @@ body{
 
         &__image img, &__info{
             border-radius: 10px;
+        }
+
+        &__info{
+            height: auto;
         }
     }
 

@@ -3,6 +3,7 @@
 const ruLng = document.querySelector('.lng-ru');
 const enLng = document.querySelector('.lng-en');
 const allLang = ['en', 'ru'];
+const roastedInfo = document.querySelector('.lng-roasted-info');
 
 ruLng.addEventListener('click', changeURLLanguageRu);
 enLng.addEventListener('click', changeURLLanguageEn);
@@ -22,6 +23,7 @@ function changeLanguage(){
         for (let key in langArr){
             document.querySelector('.lng-' + key).innerHTML = langArr[key]['ru'];
         }
+        roastedInfo.style = 'font-size: 16px';
     };
 
     enLng.onclick = () => {

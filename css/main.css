@@ -140,6 +140,7 @@ body {
 }
 .header__bot-icons svg:nth-child(1):hover, .header__bot-icons svg:nth-child(2):hover, .header__bot-icons svg:nth-child(3):hover {
   cursor: pointer;
+  filter: blur(1px);
 }
 .header__bot-icons .is_liked {
   display: none;
@@ -149,7 +150,7 @@ body {
   background: url(../images/hero.jpg) top center;
 }
 .hero__title {
-  max-width: 571px;
+  max-width: 590px;
   margin-top: 199px;
 }
 .hero__title h1 {
@@ -188,7 +189,7 @@ body {
   transition: 0.4s all ease;
 }
 .hero__btns :nth-child(1) {
-  padding: 17px 60px 11px 60px;
+  padding: 16px 60px;
   background-color: #C7A17A;
   border-radius: 10px;
 }
@@ -222,12 +223,13 @@ body {
   background-color: #14141D;
   border-radius: 0px 10px 10px 0px;
   padding-left: 29px;
-  margin-top: -5px;
+  margin-top: -6px;
+  height: 325px;
 }
 .roasted__info h2 {
   margin-top: 30px;
   margin-bottom: 15px;
-  max-width: 223px;
+  max-width: 227px;
   font-size: 24px;
   font-style: normal;
   font-weight: 900;
@@ -300,6 +302,9 @@ body {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+}
+.catalog__cards-card-footer svg:hover {
+  cursor: pointer;
 }
 .catalog__cards-card:hover {
   background-color: #22222F;
@@ -409,6 +414,9 @@ body {
   }
   .roasted__image img, .roasted__info {
     border-radius: 10px;
+  }
+  .roasted__info {
+    height: auto;
   }
   .catalog__cards {
     grid-template-columns: repeat(2, 1fr);
