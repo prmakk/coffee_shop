@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__top">
+            <div class="header__top" id="home">
                 <div class="header__top-lng">
                     <p class="lng-ru">RU</p>
                     <p class="lng-en">EN</p>
@@ -28,9 +28,9 @@
             <div class="header__bot">
                 <nav class="navbar">
                     <ul class="nav__menu">
-                        <li class="nav__menu-item"><a href="#" class="lng-home">Home</a></li>
-                        <li class="nav__menu-item"><a href="#" class="lng-about">About</a></li>
-                        <li class="nav__menu-item"><a href="#" class="lng-menu">Menu</a></li>
+                        <li class="nav__menu-item"><a href="#home" class="lng-home">Home</a></li>
+                        <li class="nav__menu-item"><a href="#about" class="lng-about">About</a></li>
+                        <li class="nav__menu-item"><a href="#catalog" class="lng-menu">Menu</a></li>
                         <li class="nav__menu-item"><a href="#" class="lng-reserv">Reservation</a></li>
                     </ul>
 
@@ -94,15 +94,15 @@
         <section class="section__hero">
             <div class="hero">
                 <div class="container">
-                    <div class="hero__title">
+                    <div class="hero__title _anim-items _anim-done">
                         <h1 class="lng-hero">Roasted coffee best choice</h1>
                     </div>
-                    <div class="hero__subtitle">
+                    <div class="hero__subtitle _anim-items _anim-done">
                         <p class="lng-hero-sub">The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.</p>
                     </div>
-                    <div class="hero__btns">
-                        <a href="#" class="lng-buy">Buy Now</a>
-                        <a href="#" class="lng-read">Read more</a>
+                    <div class="hero__btns _anim-items _anim-done">
+                        <a href="#catalog" class="lng-buy">Buy Now</a>
+                        <a href="#news" class="lng-read">Read more</a>
                     </div>
                 </div>
             </div>
@@ -110,11 +110,11 @@
 
         <section class="section__roasted">
             <div class="container">
-                <div class="roasted">
-                    <div class="roasted__image">
+                <div class="roasted" id="about">
+                    <div class="roasted__image _anim-items _anim-done">
                         <img src="images/roasted.jpg" alt="Roasted coffee">
                     </div>
-                    <div class="roasted__info">
+                    <div class="roasted__info _anim-items _anim-done">
                         <h2 class="lng-roasted">Roasted Coffee</h2>
                         <p class="lng-roasted-info">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
                     </div>
@@ -124,14 +124,14 @@
 
         <section class="section__catalog">
             <div class="container">
-                <div class="catalog">
-                    <div class="catalog__title">
+                <div class="catalog" id="catalog">
+                    <div class="catalog__title _anim-items _anim-done">
                         <h2 class="lng-catalog">Catalog</h2>
                     </div>
-                    <div class="catalog__cards">
+                    <div class="catalog__cards _anim-items _anim-done">
                         <div class="catalog__cards-card">
                             <img src="images/product1.png" alt="Coffee card image">
-                            <h2>Lavazza coffee</h2>
+                            <h2><a href="card_page/card.html">Lavazza coffee</a></h2>
                             <div class="catalog__cards-card-footer">
                                 <p class="actual_price">$19.99</p>
                                 <p class="discount_price">$29.99</p>
@@ -150,7 +150,7 @@
 
                         <div class="catalog__cards-card">
                             <img src="images/product2.png" alt="Coffee card image">
-                            <h2>Lavazza coffee</h2>
+                            <h2><a href="card_page/card.html">Lavazza coffee</a></h2>
                             <div class="catalog__cards-card-footer">
                                 <p class="actual_price">$19.99</p>
                                 <a href="#">
@@ -170,7 +170,7 @@
 
                         <div class="catalog__cards-card">
                             <img src="images/product1.png" alt="Coffee card image">
-                            <h2>Lavazza coffee</h2>
+                            <h2><a href="card_page/card.html">Lavazza coffee</a></h2>
                             <div class="catalog__cards-card-footer">
                                 <p class="actual_price">$19.99</p>
                                 <a href="#">
@@ -190,7 +190,7 @@
 
                         <div class="catalog__cards-card">
                             <img src="images/product1.png" alt="Coffee card image">
-                            <h2>Lavazza coffee</h2>
+                            <h2><a href="card_page/card.html">Lavazza coffee</a></h2>
                             <div class="catalog__cards-card-footer">
                                 <p class="actual_price">$19.99</p>
                                 <p class="discount_price">$29.99</p>
@@ -211,7 +211,7 @@
 
                         <div class="catalog__cards-card">
                             <img src="images/product2.png" alt="Coffee card image">
-                            <h2>Lavazza coffee</h2>
+                            <h2><a href="card_page/card.html">Lavazza coffee</a></h2>
                             <div class="catalog__cards-card-footer">
                                 <p class="actual_price">$19.99</p>
                                 <a href="#">
@@ -231,7 +231,7 @@
 
                         <div class="catalog__cards-card">
                             <img src="images/product1.png" alt="Coffee card image">
-                            <h2>Lavazza coffee</h2>
+                            <h2><a href="card_page/card.html">Lavazza coffee</a></h2>
                             <div class="catalog__cards-card-footer">
                                 <p class="actual_price">$19.99</p>
                                 <p class="discount_price">$29.99</p>
@@ -256,15 +256,15 @@
 
         <section class="section__news">
             <div class="container">
-                <div class="news">
-                    <div class="news__title">
+                <div class="news" id="news">
+                    <div class="news__title _anim-items _anim-done">
                         <h2 class="lng-news">News</h2>
                     </div>
-                    <div class="news__cards">
+                    <div class="news__cards _anim-items _anim-done">
                         <div class="news__cards-card">
                             <img src="images/news1.png" alt="Coffee news">
                             <div class="news__cards-card-info">
-                                <h2>Lavazza coffee</h2>
+                                <h2><a href="#">Lavazza coffee</a></h2>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             </div>
                         </div>
@@ -272,7 +272,7 @@
                         <div class="news__cards-card">
                             <img src="images/news2.png" alt="Coffee news">
                             <div class="news__cards-card-info">
-                                <h2>Lavazza coffee</h2>
+                                <h2><a href="#">Lavazza coffee</a></h2>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             </div>
                         </div>
@@ -280,7 +280,7 @@
                         <div class="news__cards-card">
                             <img src="images/news3.png" alt="Coffee news">
                             <div class="news__cards-card-info">
-                                <h2>Lavazza coffee</h2>
+                                <h2><a href="#">Lavazza coffee</a></h2>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             </div>
                         </div>
@@ -298,9 +298,9 @@
                 </div>
                 <div class="footer__list-1">
                     <ul>
-                        <li><a href="#" class="lng-home-foo">Home</a></li>
-                        <li><a href="#" class="lng-about-foo">About</a></li>
-                        <li><a href="#" class="lng-menu-foo">Menu</a></li>
+                        <li><a href="#home" class="lng-home-foo">Home</a></li>
+                        <li><a href="#about" class="lng-about-foo">About</a></li>
+                        <li><a href="#catalog" class="lng-menu-foo">Menu</a></li>
                         <li><a href="#" class="lng-reserv-foo">Reservation</a></li>
                     </ul>
                 </div>
@@ -318,5 +318,6 @@
     <script src="js/script.js"></script>
     <script src="js/lang.js"></script>
     <script src="js/change-lng.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 </html>
